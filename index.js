@@ -1,4 +1,4 @@
-// counter
+// counter 1
 document.addEventListener('aos:in', ({ detail }) => {
   console.log('animated in', detail);
 });

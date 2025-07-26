@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,15 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <!-- aside section start -->
-         <aside>
+        <aside>
             <div class="side-bar">
                 <div class="logo">
                     <p>Logo</p>
@@ -21,49 +25,49 @@
                 <ul class="side-menu">
                     <li>
                         <div class="list-items-calender">
-                        <a href="#">
-                            <img src="./assets/calender.svg">
-                            <p>Calender</p>
-                        </a>
+                            <a href="#">
+                                <img src="./assets/calender.svg">
+                                <p>Calender</p>
+                            </a>
                         </div>
                     </li>
                     <li>
                         <div class="list-items">
-                        <a href="#">
-                            <img src="./assets/profile.svg">
-                            <p>My Profile</p>
-                        </a>
+                            <a href="#">
+                                <img src="./assets/profile.svg">
+                                <p>My Profile</p>
+                            </a>
                         </div>
                     </li>
                     <li>
                         <div class="list-items">
-                        <a href="#">
-                            <img src="./assets/booking.svg">
-                            <p>Booking</p>
-                        </a>
+                            <a href="#">
+                                <img src="./assets/booking.svg">
+                                <p>Booking</p>
+                            </a>
                         </div>
                     </li>
                     <li>
                         <div class="list-items">
-                        <a href="#">
-                            <img src="./assets/chat.svg">
-                            <p>Chat</p>
-                        </a>
+                            <a href="#">
+                                <img src="./assets/chat.svg">
+                                <p>Chat</p>
+                            </a>
                         </div>
                     </li>
                     <li>
                         <div class="list-items">
-                        <a href="#">
-                            <img src="./assets/support.svg">
-                            <p>Support</p>
-                        </a>
+                            <a href="#">
+                                <img src="./assets/support.svg">
+                                <p>Support</p>
+                            </a>
                         </div>
                     </li>
                 </ul>
             </div>
-         </aside>
-         <!-- aside section end -->
-          <main>
+        </aside>
+        <!-- aside section end -->
+        <main>
             <section id="head">
                 <div class="main-head">
                     <h3>Hi Alaxander</h3>
@@ -78,32 +82,165 @@
             <section id="three-pic">
                 <div class="three-pic-main">
                     <div class="bg-green-1">
-                        <div class="inner-logo">
+                        <div class="logo-finger">
                             <img src="./assets/finger-icon.svg">
                         </div>
-                        <div class="content-bg-green-pic">
-                            <div class="head-content">
+                        <div class="mid-content">
+                            <div class="top-mid-content">
                                 <h3>Cat Campaign Details </h3>
                                 <p>Search anything you want</p>
                             </div>
-                            <div class="main-content-cat">
-                            <div>
-                                <h3>Cat Counts</h3>
-                                <div data-countup>100</div>
+                            <div class="counter">
+                                <p>Cat Count</p>
+                                <h1 class="myTargetElement" title="Counting up to a billion">100</h1>
+                                <script type="module">
+                                    import { CountUp } from "https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.min.js";
+                                    window.onload = function () {
+                                        const options = {
+                                            duration: 5,
+                                            separator: " "
+                                        };
+                                        var countUp = new CountUp("myTargetElement", 100, options);
+                                        countUp.start();
+                                        document.getElementsByClassName("myTargetElement").addEventListener("click", () => { countUp.reset(), countUp.update(1000000000) });
+                                    }
+                                </script>
                             </div>
-                            <!-- <div>
-                            <h3>Revenue Generated</h3>
-                            <div data-countup>100</div>
-                            </div> -->
+                            <div class="revenue">
+                                <p>Revenue Generated</p>
+                                <h4>AED 2354</h4>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <img src="./assets/cat.png">
+                        </div>
+                    </div>
+                    <!-- bg-blue -->
+                    <div class="bg-blue-1">
+                        <div class="logo-finger">
+                            <img src="./assets/blue-finger.svg">
+                        </div>
+                        <div class="mid-content">
+                            <div class="top-mid-content">
+                                <h3>Dog Campaign Details </h3>
+                                <p>Search anything you want</p>
+                            </div>
+                            <div class="counter">
+                                <p>Cat Count</p>
+                                <h1 class="myTargetElement" title="Counting up to a billion">100</h1>
+                                <script type="module">
+                                    import { CountUp } from "https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.min.js";
+                                    window.onload = function () {
+                                        const options = {
+                                            duration: 5,
+                                            separator: " "
+                                        };
+                                        var countUp = new CountUp("myTargetElement", 100, options);
+                                        countUp.start();
+                                        document.getElementByclass("myTargetElement").addEventListener("click", () => { countUp.reset(), countUp.update(1000000000) });
+                                    }
+                                </script>
+                            </div>
+                            <div class="revenue">
+                                <p>Revenue Generated</p>
+                                <h4>AED 2354</h4>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <img src="./assets/dog.png">
+                        </div>
+                    </div>
+                    <!-- bg-green without animal -->
+                    <div class="bg-green-1">
+                        <div class="logo-finger">
+                            <img src="./assets/finger-icon.svg">
+                        </div>
+                        <div class="mid-content">
+                            <div class="top-mid-content">
+                                <h3>Other pets Details </h3>
+                                <p>Search anything you want</p>
+                            </div>
+                            <div class="counter">
+                                <p>Cat Count</p>
+                                <h1 id="myTargetElement" title="Counting up to a billion">0</h1>
+                                <script type="module">
+                                    import { CountUp } from "https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.min.js";
+                                    window.onload = function () {
+                                        const options = {
+                                            duration: 5,
+                                            separator: " "
+                                        };
+                                        var countUp = new CountUp("myTargetElement", 100, options);
+                                        countUp.start();
+                                        document.getElementById("myTargetElement").addEventListener("click", () => { countUp.reset(), countUp.update(1000000000) });
+                                    }
+                                </script>
+                            </div>
+                            <div class="revenue">
+                                <p>Revenue Generated</p>
+                                <h4>AED 2354</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="bg-blue">
-                    </div>
                 </div>
             </section>
-          </main>
+            <hr>
+            <section>
+                <div class="progress">
+                    <div class="progress-left">
+                        <div class="progress-border">
+                            <h2>The Total Booking Count</h2>
+                            <div class="progress-3-box">
+                                <div class="box-1-left">
+                                    <div class="box-1">
+                                        <div class="box-1-in">
+                                            <img src="./assets/box1-left.svg">
+                                            <h2>Active</h2>
+                                        </div>
+                                        <div class="box-1-progress">
+                                            <h2>100</h2>
+                                            <div class='progress-bar'>
+                                                <div class='prog-status'></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="box-1">
+                                    <div class="box-2-in">
+                                        <img src="./assets/pending.svg">
+                                        <h2>Pending</h2>
+                                    </div>
+                                    <div class="box-1-progress">
+                                        <h2>100</h2>
+                                        <div class='progress-bar'>
+                                            <div class='prog-status-2'></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="box-1">
+                                <div class="box-3-in">
+                                    <img src="./assets/compleated.svg">
+                                    <h2>Compleated</h2>
+                                </div>
+                                <div class="box-1-progress">
+                                    <h2>100</h2>
+                                    <div class='progress-bar'>
+                                        <div class='prog-status-3'></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </div>
+    <div class="progress-right">
+        <p>fjfjf</p>
+    </div>
+    </div>
+    </section>
+    </main>
     </div>
     <script src="./index.js"></script>
 </body>
+
 </html>
